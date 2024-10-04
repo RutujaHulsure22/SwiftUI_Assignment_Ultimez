@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ProductListView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            NavigationStack{
+                Text("Hello world!")
+                    .navigationTitle(Constants.Titles.appTitle)
+            }
         }
         .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ProductListView()
 }
